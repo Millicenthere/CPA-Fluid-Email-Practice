@@ -1,108 +1,200 @@
 <!DOCTYPE html>
 
-<html
-  lang="en"
-  xmlns="http://www.w3.org/1999/xhtml"
-  xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office"
->
-  <head>
-    <meta charset="utf-8" />
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
 
-    <meta name="viewport" content="width=device-width" />
+<head>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8">
 
-    <meta name="x-apple-disable-message-reformatting" />
+  <meta name="viewport" content="width=device-width">
 
-    <meta
-      name="format-detection"
-      content="telephone=no,address=no,email=no,date=no,url=no"
-    />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="color-scheme" content="light dark" />
+  <meta name="x-apple-disable-message-reformatting">
 
-    <meta name="supported-color-schemes" content="light dark" />
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
 
-    <title>Basic Email Template</title>
-    <style>
-      :root {
-        color-scheme: light dark;
-        supported-color-schemes: light dark;
+  <meta name="color-scheme" content="light dark">
+
+  <meta name="supported-color-schemes" content="light dark">
+
+  <title>Basic Email Template</title>
+
+  <!--[if gte mso 9]>
+
+<xml>
+
+<o:OfficeDocumentSettings>
+
+<o:PixelsPerInch>96</o:PixelsPerInch>
+
+</o:OfficeDocumentSettings>
+
+</xml>
+
+<![endif]-->
+
+
+  <!-- Force safe font in Outlook -->
+
+  <!--[if mso]>
+
+<style>
+
+* { font-family: Arial, sans-serif !important; }
+
+</style>
+
+<![endif]-->
+
+
+  <style>
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+    }
+
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+
+    #MessageViewBody,
+    #MessageWebViewDiv {
+      width: 100% !important;
+    }
+
+
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a[x-apple-data-detectors],
+    .unstyle-auto-detected-links a,
+    .aBn {
+
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+
+    }
+
+    .im {
+      color: inherit !important;
+    }
+
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+
+    img.g-img+div {
+      display: none !important;
+    }
+
+
+    /* Gmail iOS right-gutter fixes */
+
+    @media only screen and (min-device-width:320px) and (max-device-width:374px) {
+      u~div .email-container {
+        min-width: 320px !important;
       }
+    }
 
-      html,
-      body {
-        margin: 0 auto !important;
-        padding: 0 !important;
-        height: 100% !important;
-        width: 100% !important;
+    @media only screen and (min-device-width:375px) and (max-device-width:413px) {
+      u~div .email-container {
+        min-width: 375px !important;
       }
+    }
 
-      * {
-        -ms-text-size-adjust: 100%;
-        -webkit-text-size-adjust: 100%;
+    @media only screen and (min-device-width:414px) {
+      u~div .email-container {
+        min-width: 414px !important;
       }
+    }
 
-      div[style*="margin: 16px 0"] {
-        margin: 0 !important;
-      }
 
-      #MessageViewBody,
-      #MessageWebViewDiv {
-        width: 100% !important;
-      }
+    /* Hover */
 
-      table,
-      td {
-        mso-table-lspace: 0pt !important;
-        mso-table-rspace: 0pt !important;
-      }
+    .button-td,
+    .button-a {
+      transition: all 100ms ease-in;
+    }
 
-      table {
-        border-spacing: 0 !important;
-        border-collapse: collapse !important;
-        table-layout: fixed !important;
-        margin: 0 auto !important;
-      }
+    .button-td-primary:hover,
+    .button-a-primary:hover {
+      background: #555555 !important;
+      border-color: #555555 !important;
+    }
+  </style>
+</head>
 
-      img {
-        -ms-interpolation-mode: bicubic;
-      }
+<body width="100%" style="padding: 0 !important; background-color: #f4f4f4f4;">
+  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #f4f4f4f4;">
+    <!-- Hidden Preheader -->
+    <div style="max-height: 0; overflow: hidden; mso-hide: all;" aria-hidden="true">
+      Thank you for subcribing to our newsletter! We're excited to have you on board.
+    </div>
+    <!-- Preview Text Spacing Hack -->
+    <div
+      style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow:hidden; mso-hide:all; font-family:san-serif;">
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <!-- container -->
+    <div style="max-width: 600px; margin: 0 auto;" class="email-container">
+      <!--[if mso]>
+          <table role="presentation" cellspacing="0"cellpadding="0" border="0" width="600" align="center"><tr><td>
+          <[endif]-->
+      <!-- Header -->
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+        style="background-color: #dbeafe;" class="header-light-bg">
+        <tr>
+          <td style="padding: 20px; text-align: center;">
+            <img src="https://placehold.co/150x50/1e40af/dbeafe?text=Your+Logo" width="150" height="50"
+              alt="Company Logo"
+              style="height: auto; background: #dddddd; font-family: sans-serif; font-size: 15px; line-height: 15px; color: #555555;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </center>
+</body>
 
-      a {
-        text-decoration: none;
-      }
-
-      a[x-apple-data-detectors],
-      .unstyle-auto-detected-links a,
-      .aBn {
-        border-bottom: 0 !important;
-        cursor: default !important;
-        color: inherit !important;
-        text-decoration: none !important;
-
-        font-size: inherit !important;
-        font-family: inherit !important;
-        font-weight: inherit !important;
-        line-height: inherit !important;
-      }
-
-      .im {
-        color: inherit !important;
-      }
-
-      .a6S {
-        display: none !important;
-        opacity: 0.01 !important;
-      }
-
-      img.g-img + div {
-        display: none !important;
-      }
-    </style>
-  </head>
-  <body width="100%" style="padding: 0 !important; background-color: #f4f4f4f4;">
-    
-  </body>
 </html>
